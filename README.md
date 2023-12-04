@@ -1,8 +1,23 @@
-# React + Vite
+# Music App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Music App is a front-end application built using React that allows for the viewing of artists, their top songs, and their respective albums, with a simple like system in place.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository and `cd` into the `api` directory:
+
+   ```sh
+   git clone git@github.com:nine96as/music-app.git && cd music-app
+   ```
+
+2. Install required `npm` dependencies:
+
+   ```sh
+   npm install #install dependencies from package.json
+   ```
+
+3. Run the application with:
+
+   ```sh
+   npm run dev #vite listens for file changes
+   ```
