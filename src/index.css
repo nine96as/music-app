@@ -1,0 +1,59 @@
+.info-section,
+.top-songs-section,
+.albums-list-section {
+  padding: 24px;
+}
+
+.artist-genres {
+  margin-top: 24px;
+  display: flex;
+  font-weight: bold;
+  gap: 24px;
+}
+
+.songs-container {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.song-cover-art {
+  height: 75px;
+}
+
+.like-btn {
+  display: flex;
+  border: 1px solid #ebebec;
+  background-color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s;
+}
+
+.like-btn:hover {
+  transform: scale(1.1);
+  border: 1px solid #dbdbde;
+}
+
+.albums-container {
+  display: flex;
+  gap: 24px;
+}
+
+.album {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.album-cover-art {
+  height: 125px;
+}
