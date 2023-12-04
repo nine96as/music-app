@@ -1,18 +1,15 @@
+import { data } from './assets/data';
 import './index.css';
 
 function App() {
   return (
     <>
       <div className='info-section'>
-        <h1 className='artist-name'>Alan Walker</h1>
-        <p className='artist-intro'>
-          Alan Olav Walker, formerly known by his stage name Dj Walkzz, is a
-          British-born Norwegian record producer and DJ. He is best known for
-          his 2015 single &quot;Faded&quot;.
-        </p>
+        <h1 className='artist-name'>{data[0].artist_name}</h1>
+        <p className='artist-intro'>{data[0].artist_intro}</p>
         <div className='artist-genres'>
-          <div className='genre'>Electronic</div>
-          <div className='genre'>Classical</div>
+          <div className='genre'>{data[0].artist_genres[0].name}</div>
+          <div className='genre'>{data[0].artist_genres[1].name}</div>
         </div>
       </div>
 
@@ -22,13 +19,13 @@ function App() {
           <div className='song'>
             <img
               className='song-cover-art'
-              src='https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png'
+              src={data[0].top_songs[0].cover_art}
               alt=''
             />
-            <div className='song-name'>Faded</div>
-            <div className='song-album'>Different World</div>
-            <div className='song-length'>3:32</div>
-            <div className='song-listens'>2,011,779,067</div>
+            <div className='song-name'>{data[0].top_songs[0].name}</div>
+            <div className='song-album'>{data[0].top_songs[0].album}</div>
+            <div className='song-length'>{data[0].top_songs[0].length}</div>
+            <div className='song-listens'>{data[0].top_songs[0].listens}</div>
             <button className='like-btn'>
               <svg
                 fill='none'
@@ -51,13 +48,13 @@ function App() {
           <div className='song'>
             <img
               className='song-cover-art'
-              src='https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png'
+              src={data[0].top_songs[1].cover_art}
               alt=''
             />
-            <div className='song-name'>Faded</div>
-            <div className='song-album'>Different World</div>
-            <div className='song-length'>3:32</div>
-            <div className='song-listens'>2,011,779,067</div>
+            <div className='song-name'>{data[0].top_songs[1].name}</div>
+            <div className='song-album'>{data[0].top_songs[1].album}</div>
+            <div className='song-length'>{data[0].top_songs[1].length}</div>
+            <div className='song-listens'>{data[0].top_songs[1].listens}</div>
             <button className='like-btn'>
               <svg
                 fill='none'
@@ -86,16 +83,16 @@ function App() {
           <div className='album'>
             <img
               className='album-cover-art'
-              src='https://upload.wikimedia.org/wikipedia/en/a/a8/Alan_Walker_%E2%80%93_Different_World.png'
+              src={data[0].albums[0].cover_art}
             />
-            <div className='album-name'>Different World</div>
+            <div className='album-name'>{data[0].albums[0].name}</div>
           </div>
           <div className='album'>
             <img
               className='album-cover-art'
-              src='https://upload.wikimedia.org/wikipedia/en/a/a8/Alan_Walker_%E2%80%93_Different_World.png'
+              src={data[0].albums[1].cover_art}
             />
-            <div className='album-name'>Different World</div>
+            <div className='album-name'>{data[0].albums[1].name}</div>
           </div>
         </div>
       </div>
