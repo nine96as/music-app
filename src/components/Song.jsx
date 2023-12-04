@@ -1,18 +1,22 @@
 import PropTypes from 'prop-types';
 import { data } from '../assets/data';
 
-function Song({ id, value }) {
+function Song({ artist_id, value }) {
   return (
     <div className='song'>
       <img
         className='song-cover-art'
-        src={data[id].top_songs[value].cover_art}
+        src={data[artist_id].top_songs[value].cover_art}
         alt=''
       />
-      <div className='song-name'>{data[id].top_songs[value].name}</div>
-      <div className='song-album'>{data[id].top_songs[value].album}</div>
-      <div className='song-length'>{data[id].top_songs[value].length}</div>
-      <div className='song-listens'>{data[id].top_songs[value].listens}</div>
+      <div className='song-name'>{data[artist_id].top_songs[value].name}</div>
+      <div className='song-album'>{data[artist_id].top_songs[value].album}</div>
+      <div className='song-length'>
+        {data[artist_id].top_songs[value].length}
+      </div>
+      <div className='song-listens'>
+        {data[artist_id].top_songs[value].listens}
+      </div>
       <button className='like-btn'>
         <svg
           fill='none'
@@ -36,7 +40,7 @@ function Song({ id, value }) {
 }
 
 Song.propTypes = {
-  id: PropTypes.number,
+  artist_id: PropTypes.number,
   value: PropTypes.number
 };
 
