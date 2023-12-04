@@ -76,9 +76,11 @@
   background-color: #f7f8fa;
   padding: 18px;
   border-radius: 12px;
+  width: 161px;
 }
 
 .album-name {
+  text-align: center;
   font-weight: 600;
 }
 
