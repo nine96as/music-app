@@ -29,8 +29,8 @@ The Music App is a front-end application built using React that allows for the v
 
 # Project Name
 
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> The Music App is a front-end application built using React that allows for the viewing of artists, their top songs, and their respective albums, with a simple like system in place.
+> Live demo [_here_](https://music-app-react.fly.dev). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 
