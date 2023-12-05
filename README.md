@@ -44,4 +44,4 @@ The Music App is a front-end application built using React that allows for the v
 > Negative potential consequences of an action.
 
 > [!NOTE]  
->  The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
+> The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
