@@ -30,6 +30,7 @@ The Music App is a front-end application built using React that allows for the v
 # Project Name
 
 > The Music App is a front-end application built using React that allows for the viewing of artists, their top songs, and their respective albums, with a simple like system in place.
+
 > Live demo [_here_](https://music-app-react.fly.dev). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
@@ -76,16 +77,28 @@ List the ready features here:
 
 ## Setup
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+1. Clone the repository and `cd` into the `music-app` directory:
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+   ```sh
+   git clone git@github.com:nine96as/music-app.git && cd music-app
+   ```
+
+2. Install required `npm` dependencies:
+
+   ```sh
+   npm install #install dependencies from package.json
+   ```
 
 ## Usage
 
-How does one go about using it?
-Provide various use cases and code examples here.
+Run the application with:
 
-`write-your-code-here`
+```sh
+npm run dev #vite listens for file changes
+```
+
+> [!note]
+> The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code. -->
 
 ## Project Status
 
