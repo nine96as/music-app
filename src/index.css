@@ -24,19 +24,17 @@
 }
 
 .songs-container {
-  display: flex;
-  flex-flow: column;
-  gap: 12px;
+  width: 100%;
+  background-color: #f7f8fa;
+  padding: 12px;
+  border-radius: 12px;
+  border: 0;
 }
 
 .song {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
-  background-color: #f7f8fa;
-  padding: 18px;
-  border-radius: 12px;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
 }
 
 .song-name {
