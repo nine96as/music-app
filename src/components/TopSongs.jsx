@@ -6,9 +6,11 @@ function TopSongs() {
     <div className='top-songs-section'>
       <h2>Top Songs</h2>
       <table className='songs-container'>
-        {data[0].top_songs.map((_, i) => (
-          <Song artist_id={0} value={i} key={i} />
-        ))}
+        <tbody>
+          {data[0].top_songs.map((_, i) => (
+            <Song artist_id={0} value={i} key={i} />
+          ))}
+        </tbody>
       </table>
     </div>
   );
