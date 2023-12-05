@@ -27,7 +27,7 @@ The Music App is a front-end application built using React that allows for the v
 > [!note]
 > The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code. -->
 
-# Project Name
+# Music App
 
 > The Music App is a front-end application built using React that allows for the viewing of artists, their top songs, and their respective albums, with a simple like system in place.
 
@@ -98,13 +98,13 @@ npm run dev #vite listens for file changes
 ```
 
 > [!note]
-> The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code. -->
+> The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
 
 ## Project Status
 
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_
 
-## Room for Improvement
+<!-- ## Room for Improvement
 
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
@@ -116,7 +116,7 @@ Room for improvement:
 To do:
 
 - Feature to be added 1
-- Feature to be added 2
+- Feature to be added 2 -->
 
 ## Acknowledgements
 
@@ -128,7 +128,7 @@ Give credit here.
 
 ## Contact
 
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@nine96as](https://ayo.so/nine96) - feel free to contact me!
 
 <!-- Optional -->
 <!-- ## License -->
