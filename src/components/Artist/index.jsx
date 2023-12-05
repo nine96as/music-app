@@ -8,11 +8,11 @@ function Artist({ artist_id }) {
   const [genres, setGenres] = useState([]);
 
   useEffect(() => {
-    getArtistName();
-    getArtistGenres();
+    getName();
+    getGenres();
   }, []);
 
-  const getArtistName = async () => {
+  const getName = async () => {
     try {
       const url = `https://api.musixmatch.com/ws/1.1/artist.get?artist_mbid=e4a51f17-a57b-47b1-b37b-f552d0f8e9e6&apikey=${
         import.meta.env.VITE_API_KEY
@@ -26,7 +26,7 @@ function Artist({ artist_id }) {
     }
   };
 
-  const getArtistGenres = async () => {
+  const getGenres = async () => {
     const validGenreIds = [1073, 1068];
 
     try {
