@@ -1,5 +1,5 @@
-import { data } from '../assets/data';
-import Album from './Album';
+import { data } from '../../assets/data';
+import Album from '../Album';
 
 function AlbumsList() {
   return (

@@ -1,5 +1,5 @@
-import { data } from '../assets/data';
-import Song from './Song';
+import { data } from '../../assets/data';
+import Song from '../Song';
 
 function TopSongs() {
   return (

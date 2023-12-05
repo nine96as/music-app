@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { data } from '../assets/data';
-import Like from './Like';
+import { data } from '../../assets/data';
+import Like from '../Like';
 
 function Song({ artist_id, value }) {
   return (

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { data } from '../assets/data';
+import { data } from '../../assets/data';
 
 function Genre({ artist_id, value }) {
   return (
