@@ -28,5 +28,20 @@ The Music App is a front-end application built using React that allows for the v
    >
    > This is a note
 
-   > **Note**  
-   >  The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
+   > [!NOTE]  
+   > Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!NOTE]  
+>  The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
