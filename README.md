@@ -28,8 +28,8 @@ The Music App is a front-end application built using React that allows for the v
    >
    > This is a note
 
-   > [!NOTE]  
-   > Highlights information that users should take into account, even when skimming.
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
 > [!TIP]
 > Optional information to help a user be more successful.
