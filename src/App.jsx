@@ -1,6 +1,4 @@
-import AlbumsList from './components/AlbumsList';
-import ArtistInfo from './components/ArtistInfo';
-import TopSongs from './components/TopSongs';
+import { AlbumsList, ArtistInfo, TopSongs } from './components';
 import './index.css';
 
 function App() {

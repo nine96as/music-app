@@ -1,4 +1,4 @@
-import Artist from './Artist';
+import Artist from '../Artist';
 
 function ArtistInfo() {
   return (
