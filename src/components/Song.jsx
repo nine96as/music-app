@@ -4,22 +4,41 @@ import Like from './Like';
 
 function Song({ artist_id, value }) {
   return (
-    <div className='song'>
-      <img
-        className='song-cover-art'
-        src={data[artist_id].top_songs[value].cover_art}
-        alt=''
-      />
-      <div className='song-name'>{data[artist_id].top_songs[value].name}</div>
-      <div className='song-album'>{data[artist_id].top_songs[value].album}</div>
-      <div className='song-length'>
-        {data[artist_id].top_songs[value].length}
-      </div>
-      <div className='song-listens'>
-        {data[artist_id].top_songs[value].listens}
-      </div>
-      <Like />
-    </div>
+    <tr className='song'>
+      <td>
+        {' '}
+        <img
+          className='song-cover-art'
+          src={data[artist_id].top_songs[value].cover_art}
+          alt=''
+        />
+      </td>
+      <td>
+        <div className='song-name'>{data[artist_id].top_songs[value].name}</div>
+      </td>
+      <td>
+        {' '}
+        <div className='song-album'>
+          {data[artist_id].top_songs[value].album}
+        </div>
+      </td>
+      <td>
+        {' '}
+        <div className='song-length'>
+          {data[artist_id].top_songs[value].length}
+        </div>
+      </td>
+      <td>
+        {' '}
+        <div className='song-listens'>
+          {data[artist_id].top_songs[value].listens}
+        </div>
+      </td>
+      <td>
+        {' '}
+        <Like />
+      </td>
+    </tr>
   );
 }
 
