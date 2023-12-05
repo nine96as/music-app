@@ -6,7 +6,7 @@ The Music App is a front-end application built using React that allows for the v
 
 ## Setup
 
-1. Clone the repository and `cd` into the `api` directory:
+1. Clone the repository and `cd` into the `music-app` directory:
 
    ```sh
    git clone git@github.com:nine96as/music-app.git && cd music-app
@@ -23,3 +23,5 @@ The Music App is a front-end application built using React that allows for the v
    ```sh
    npm run dev #vite listens for file changes
    ```
+
+   > **Note**: The `dev` script will run the app with [vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
