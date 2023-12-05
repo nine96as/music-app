@@ -24,5 +24,5 @@ The Music App is a front-end application built using React that allows for the v
    npm run dev #vite listens for file changes
    ```
 
-> [!NOTE]  
-> The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
+   > [!NOTE]  
+   > The `dev` script will run the app with [Vite](https://vitejs.dev/), which will automatically restart the app when changes are made to the source code.
