@@ -1,9 +1,9 @@
 # Music App
 
-> The Music App is a front-end application built using React that allows for the viewing of artist profiles.
+The Music App is a front-end application built using React that allows for the viewing of artist profiles.
 
-> [!tip]
-> Live demo [_here_](https://music-app-react.fly.dev).
+> [!note]
+> Live demo [_here_](https://music-app-react.fly.dev)
 
 ## Table of Contents
 
@@ -39,24 +39,24 @@ List the ready features here:
 
 ## Setup
 
-1. Clone the repository and `cd` into the `music-app` directory:
+Clone the repository and `cd` into the `music-app` directory:
 
-   ```sh
-   git clone git@github.com:nine96as/music-app.git && cd music-app
-   ```
+```sh
+git clone git@github.com:nine96as/music-app.git && cd music-app
+```
 
-2. Install required `npm` dependencies:
+Install required `npm` dependencies:
 
-   ```sh
-   npm install #install dependencies from package.json
-   ```
+```sh
+npm install
+```
 
 ## Usage
 
 Run the application with:
 
 ```sh
-npm run dev #vite listens for file changes
+npm run dev
 ```
 
 > [!note]
