@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Song from '../Song';
 
-function TopSongs() {
+function SongList() {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function TopSongs() {
             <Song
               name={s.strTrack}
               album={s.strAlbum}
-              length={s.intDuration}
+              duration={s.intDuration}
               key={i}
             />
           ))}
@@ -36,4 +36,4 @@ function TopSongs() {
   );
 }
 
-export default TopSongs;
+export default SongList;

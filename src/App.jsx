@@ -1,12 +1,12 @@
-import { AlbumsList, ArtistInfo, TopSongs } from './components';
+import { AlbumList, ArtistInfo, SongList } from './components';
 import './index.css';
 
 function App() {
   return (
     <>
       <ArtistInfo />
-      <TopSongs />
-      <AlbumsList />
+      <SongList />
+      <AlbumList />
     </>
   );
 }

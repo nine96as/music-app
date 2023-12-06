@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Album from '../Album';
 
-function AlbumsList() {
+function AlbumList() {
   const [albums, setAlbums] = useState([]);
 
   useEffect(() => {
@@ -29,4 +29,4 @@ function AlbumsList() {
   );
 }
 
-export default AlbumsList;
+export default AlbumList;
