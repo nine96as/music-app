@@ -18,9 +18,9 @@ function SongList() {
   };
 
   return (
-    <div className='top-songs-section'>
+    <div className='song-list-section'>
       <h2>Top Songs</h2>
-      <table className='songs-container'>
+      <table className='song-container'>
         <tbody>
           {songs.map((s, i) => (
             <Song

@@ -18,9 +18,9 @@ function AlbumList() {
   };
 
   return (
-    <div className='albums-list-section'>
+    <div className='album-list-section'>
       <h2>Albums</h2>
-      <div className='albums-container'>
+      <div className='album-container'>
         {albums.map((a, i) => (
           <Album name={a.strAlbum} img={a.strAlbumThumb} key={i} />
         ))}

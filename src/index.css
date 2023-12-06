@@ -5,8 +5,8 @@
 }
 
 .info-section,
-.top-songs-section,
-.albums-list-section {
+.song-list-section,
+.album-list-section {
   padding: 24px;
 }
 
@@ -23,7 +23,7 @@
   border-radius: 10px;
 }
 
-.songs-container {
+.song-container {
   width: 100%;
   background-color: #f7f8fa;
   padding: 12px;
@@ -61,7 +61,7 @@
   border: 1px solid #dbdbde;
 }
 
-.albums-container {
+.album-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
