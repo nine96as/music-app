@@ -25,33 +25,32 @@
 }
 
 .song-container {
-  width: 100%;
-  padding: 12px;
   border-radius: 12px;
   border: 0;
 }
 
 .song {
-  padding: 10px 0;
+  padding: 6px;
 }
 
 .table-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 24px;
   background-color: white;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .table-row {
   display: flex;
   flex-flow: row nowrap;
+  gap: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 10px;
   border-radius: 12px;
   align-items: center;
-  width: 100%;
+  width: 360px;
 }
 
 .row-item {
@@ -91,6 +90,7 @@
 }
 
 .album-container {
+  padding: 10px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -108,6 +108,7 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 12px;
   width: 161px;
+  transition: all 0.15s ease-in-out;
 }
 
 .album-name {
