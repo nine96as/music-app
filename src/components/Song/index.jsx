@@ -1,34 +1,24 @@
 import PropTypes from 'prop-types';
-import { data } from '../../assets/data';
 import Like from '../Like';
 
-function Song({ artist_id, value }) {
+function Song({ name, album, length }) {
   return (
     <tr className='song'>
       <td>
         <img
           className='song-cover-art'
-          src={data[artist_id].top_songs[value].cover_art}
-          alt=''
+          src='https://www.theaudiodb.com/images/media/album/thumb/tc353i1691147138.jpg'
+          alt={name}
         />
       </td>
       <td>
-        <div className='song-name'>{data[artist_id].top_songs[value].name}</div>
+        <div className='song-name'>{name}</div>
       </td>
       <td>
-        <div className='song-album'>
-          {data[artist_id].top_songs[value].album}
-        </div>
+        <div className='song-album'>{album}</div>
       </td>
       <td>
-        <div className='song-length'>
-          {data[artist_id].top_songs[value].length}
-        </div>
-      </td>
-      <td>
-        <div className='song-listens'>
-          {data[artist_id].top_songs[value].listens}
-        </div>
+        <div className='song-length'>{length}</div>
       </td>
       <td>
         <Like />
@@ -38,8 +28,9 @@ function Song({ artist_id, value }) {
 }
 
 Song.propTypes = {
-  artist_id: PropTypes.number,
-  value: PropTypes.number
+  name: PropTypes.string,
+  album: PropTypes.string,
+  length: PropTypes.string
 };
 
 export default Song;

@@ -1,46 +1,20 @@
-import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import { data } from '../../assets/data';
 import Genre from '../Genre';
 
-function Artist({ artist_id }) {
-  const [name, setName] = useState('');
-  const [genres, setGenres] = useState([]);
+function Artist() {
+  const [artist, setArtist] = useState([]);
 
   useEffect(() => {
-    getName();
-    getGenres();
+    getArtist();
   }, []);
 
-  const getName = async () => {
+  const getArtist = async () => {
     try {
-      const url = `https://api.musixmatch.com/ws/1.1/artist.get?artist_mbid=e4a51f17-a57b-47b1-b37b-f552d0f8e9e6&apikey=${
-        import.meta.env.VITE_API_KEY
-      }`;
+      const url = 'https://theaudiodb.com/api/v1/json/2/artist.php?i=144041';
       const resp = await fetch(url);
-      const data = await resp.json();
+      const artistData = await resp.json();
 
-      setName(data.message.body.artist.artist_name);
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  const getGenres = async () => {
-    const validGenreIds = [1073, 1068];
-
-    try {
-      const url = `https://api.musixmatch.com/ws/1.1/music.genres.get?apikey=${
-        import.meta.env.VITE_API_KEY
-      }`;
-      const resp = await fetch(url);
-      const data = await resp.json();
-      const genreArr = data.message.body.music_genre_list;
-      const filteredArr = genreArr.filter((g) =>
-        validGenreIds.includes(g.music_genre.music_genre_id)
-      );
-
-      setGenres(filteredArr);
+      setArtist(artistData.artists[0]);
     } catch (e) {
       console.log(e);
     }
@@ -48,19 +22,14 @@ function Artist({ artist_id }) {
 
   return (
     <>
-      <h1 className='artist-name'>{name}</h1>
-      <p className='artist-intro'>{data[artist_id].artist_intro}</p>
+      <h1 className='artist-name'>{artist.strArtist}</h1>
+      <p className='artist-intro'>{artist.strBiographyEN}</p>
+
       <div className='artist-genres'>
-        {genres.map((g, i) => (
-          <Genre value={g.music_genre.music_genre_name} key={i} />
-        ))}
+        <Genre value={artist.strGenre} />
       </div>
     </>
   );
 }
-
-Artist.propTypes = {
-  artist_id: PropTypes.number
-};
 
 export default Artist;

@@ -1,21 +1,17 @@
 import PropTypes from 'prop-types';
-import { data } from '../../assets/data';
 
-function Album({ artist_id, value }) {
+function Album({ name, img }) {
   return (
     <div className='album'>
-      <img
-        className='album-cover-art'
-        src={data[artist_id].albums[value].cover_art}
-      />
-      <div className='album-name'>{data[artist_id].albums[value].name}</div>
+      <img className='album-cover-art' src={img} />
+      <div className='album-name'>{name}</div>
     </div>
   );
 }
 
 Album.propTypes = {
-  artist_id: PropTypes.number,
-  value: PropTypes.number
+  name: PropTypes.string,
+  img: PropTypes.string
 };
 
 export default Album;
