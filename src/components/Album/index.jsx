@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Album({ name, img }) {
   return (
     <div className='album'>
-      <img className='album-cover-art' src={img} />
+      <img className='album-cover-art' src={img} alt={name} />
       <div className='album-name'>{name}</div>
     </div>
   );
