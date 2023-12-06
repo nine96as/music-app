@@ -20,7 +20,7 @@ function SongList() {
   return (
     <div className='song-list-section'>
       <h2>Top Songs</h2>
-      <table className='song-container table-container'>
+      <div className='song-container table-container'>
         {songs.map((s, i) => (
           <Song
             name={s.strTrack}
@@ -29,7 +29,7 @@ function SongList() {
             key={i}
           />
         ))}
-      </table>
+      </div>
     </div>
   );
 }
