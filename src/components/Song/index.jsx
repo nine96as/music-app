@@ -4,29 +4,21 @@ import Like from '../Like';
 
 function Song({ name, album, duration }) {
   return (
-    <tr className='song'>
-      <td>
+    <div className='song'>
+      <div className='table-row'>
         <img
-          className='song-cover-art'
+          className='song-cover-art row-item'
           src='https://www.theaudiodb.com/images/media/album/thumb/tc353i1691147138.jpg'
           alt={name}
         />
-      </td>
-      <td>
-        <div className='song-name'>{name}</div>
-      </td>
-      <td>
-        <div className='song-album'>{album}</div>
-      </td>
-      <td>
-        <div className='song-length'>
+        <div className='song-name row-item'>{name}</div>
+        <div className='song-album row-item'>{album}</div>
+        <div className='song-length row-item'>
           {dayjs(parseInt(duration)).format('m:ss')}
         </div>
-      </td>
-      <td>
         <Like />
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 }
 

@@ -18,23 +18,49 @@
 }
 
 .genre {
-  background-color: #f7f8fa;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 12px;
   border-radius: 10px;
 }
 
 .song-container {
   width: 100%;
-  background-color: #f7f8fa;
   padding: 12px;
   border-radius: 12px;
   border: 0;
 }
 
 .song {
-  gap: 12px;
-  padding: 12px;
-  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.table-container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table-row {
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.row-item {
+  display: flex;
+  flex: 1;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.15s ease-in-out;
 }
 
 .song-name {
@@ -42,13 +68,16 @@
 }
 
 .song-cover-art {
-  height: 75px;
-  border-radius: 10px;
+  max-height: 75px;
+  max-width: 75px;
+  border-radius: 8px;
 }
 
 .like-btn {
   display: flex;
-  border: 1px solid #ebebec;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
@@ -72,9 +101,11 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-items: center;
   gap: 12px;
-  background-color: #f7f8fa;
-  padding: 18px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 12px;
   width: 161px;
 }
@@ -85,6 +116,6 @@
 }
 
 .album-cover-art {
-  height: 125px;
+  height: 161px;
   border-radius: 10px;
 }
