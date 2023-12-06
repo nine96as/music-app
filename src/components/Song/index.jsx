@@ -5,7 +5,7 @@ import Like from '../Like';
 function Song({ name, album, duration }) {
   return (
     <div className='song'>
-      <div className='table-row'>
+      <div className='song table-row'>
         <img
           className='song-cover-art row-item'
           src='https://www.theaudiodb.com/images/media/album/thumb/tc353i1691147138.jpg'
