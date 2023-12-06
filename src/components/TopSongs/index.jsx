@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Song from '../Song';
 
@@ -9,15 +10,11 @@ function TopSongs() {
   }, []);
 
   const getSongs = async () => {
-    try {
-      const url = 'https://theaudiodb.com/api/v1/json/2/track.php?m=2408685';
-      const resp = await fetch(url);
-      const songsData = await resp.json();
-
-      setSongs(songsData.track);
-    } catch (e) {
-      console.log(e);
-    }
+    const resp = await axios.get(
+      'https://theaudiodb.com/api/v1/json/2/track.php?m=2408685'
+    );
+    const songs = resp.data.track;
+    setSongs(songs);
   };
 
   return (

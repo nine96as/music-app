@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 import Like from '../Like';
 
@@ -18,7 +19,9 @@ function Song({ name, album, length }) {
         <div className='song-album'>{album}</div>
       </td>
       <td>
-        <div className='song-length'>{length}</div>
+        <div className='song-length'>
+          {dayjs(parseInt(length)).format('m:ss')}
+        </div>
       </td>
       <td>
         <Like />
