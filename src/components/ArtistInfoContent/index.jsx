@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Genre from '../Genre';
 
-function Artist({ artist_id }) {
+function ArtistInfoContent({ artist_id }) {
   const [artist, setArtist] = useState([]);
 
   useEffect(() => {
@@ -33,8 +33,8 @@ function Artist({ artist_id }) {
   );
 }
 
-export default Artist;
+export default ArtistInfoContent;
 
-Artist.propTypes = {
+ArtistInfoContent.propTypes = {
   artist_id: PropTypes.number
 };
