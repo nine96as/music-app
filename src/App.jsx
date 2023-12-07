@@ -1,5 +1,5 @@
+import './App.css';
 import { AlbumList, ArtistInfo, SongList } from './components';
-import './index.css';
 
 function App() {
   return (
