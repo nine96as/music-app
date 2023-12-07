@@ -2,15 +2,11 @@ import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 import Like from '../Like';
 
-function Song({ name, album, duration }) {
+function Song({ coverArt, name, album, duration }) {
   return (
     <div className='song'>
       <div className='song table-row'>
-        <img
-          className='song-cover-art row-item'
-          src='https://www.theaudiodb.com/images/media/album/thumb/tc353i1691147138.jpg'
-          alt={name}
-        />
+        <img className='song-cover-art row-item' src={coverArt} alt={name} />
         <div className='song-name row-item'>{name}</div>
         <div className='song-album row-item'>{album}</div>
         <div className='song-length row-item'>
@@ -23,6 +19,7 @@ function Song({ name, album, duration }) {
 }
 
 Song.propTypes = {
+  coverArt: PropTypes.string,
   name: PropTypes.string,
   album: PropTypes.string,
   duration: PropTypes.string
