@@ -3,9 +3,7 @@
 }
 
 .album-container {
-  padding: 6px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
   gap: 24px;
 }
