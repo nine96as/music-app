@@ -37,7 +37,7 @@ function SongList() {
   return (
     <div className='song-list-section'>
       <h2>Top Songs</h2>
-      <div className='song-container table-container'>
+      <div className='song-container'>
         {songs.map((s, i) => (
           <Song
             coverArt={album.strAlbumThumb}

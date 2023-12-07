@@ -1,8 +1,8 @@
 .song {
-  padding: 6px;
+  background-color: white;
 }
 
-.table-row {
+.song-row {
   display: flex;
   flex-flow: row nowrap;
   gap: 12px;
@@ -14,7 +14,7 @@
   width: 360px;
 }
 
-.row-item {
+.song-item {
   display: flex;
   flex: 1;
   font-size: 14px;
