@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Genre from '../Genre';
 
-function ArtistInfoContent({ artist_id }) {
+function ArtistInfoContent() {
   const [artist, setArtist] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
     getArtist();
@@ -11,7 +13,7 @@ function ArtistInfoContent({ artist_id }) {
 
   const getArtist = async () => {
     try {
-      const url = `https://theaudiodb.com/api/v1/json/2/artist.php?i=${artist_id}`;
+      const url = `https://theaudiodb.com/api/v1/json/2/artist.php?i=${id}`;
       const resp = await fetch(url);
       const artistData = await resp.json();
 

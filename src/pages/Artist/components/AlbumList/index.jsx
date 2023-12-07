@@ -1,10 +1,11 @@
 import axios from 'axios';
-import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Album from '../Album';
 
-function AlbumList({ artist_id }) {
+function AlbumList() {
   const [albums, setAlbums] = useState([]);
+  const { id } = useParams();
 
   useEffect(() => {
     getAlbums();
@@ -12,7 +13,7 @@ function AlbumList({ artist_id }) {
 
   const getAlbums = async () => {
     const resp = await axios.get(
-      `https://theaudiodb.com/api/v1/json/2/album.php?i=${artist_id}`
+      `https://theaudiodb.com/api/v1/json/2/album.php?i=${id}`
     );
     const albums = resp.data.album.filter((a) => a.strAlbumThumb);
     setAlbums(albums);
@@ -31,7 +32,3 @@ function AlbumList({ artist_id }) {
 }
 
 export default AlbumList;
-
-AlbumList.propTypes = {
-  artist_id: PropTypes.number
-};

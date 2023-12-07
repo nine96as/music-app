@@ -1,12 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { AlbumList, ArtistInfo, SongList } from './components';
+import { NavBar } from './layout';
+import * as Pages from './pages';
 
 function App() {
   return (
     <>
-      <ArtistInfo artist_id={144041} />
-      <SongList artist_id={144041} />
-      <AlbumList artist_id={144041} />
+      <Routes>
+        <Route path='/' element={<NavBar />}>
+          <Route index element={<Pages.Home />} />
+
+          <Route path='/artists'>
+            <Route index element={<Pages.Artists />} />
+            <Route path=':id' element={<Pages.Artist />} />
+          </Route>
+        </Route>
+      </Routes>
     </>
   );
 }

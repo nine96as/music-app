@@ -1,0 +1,25 @@
+.artists {
+  padding: 24px;
+}
+
+.artists-container {
+  display: flex;
+  gap: 24px;
+  flex-flow: row wrap;
+}
+
+.artist-card {
+  display: flex;
+  gap: 10px;
+  flex-flow: column;
+}
+
+.artist-img {
+  border-radius: 12px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.artist-name {
+  font-weight: 500;
+}
