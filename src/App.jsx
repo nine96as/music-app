@@ -6,7 +6,7 @@ function App() {
     <>
       <ArtistInfo artist_id={144041} />
       <SongList />
-      <AlbumList />
+      <AlbumList artist_id={144041} />
     </>
   );
 }
