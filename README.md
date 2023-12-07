@@ -68,7 +68,8 @@ Project is: _in progress_
 
 ## Acknowledgements
 
-- The CSS styling in this project was inspired by [Masudur Rahman](https://dribbble.com/shots/5776583-Light-Music-Artist-Page)
+- The CSS styling in this project was inspired by [Masudur Rahman](https://dribbble.com/shots/5776583-Light-Music-Artist-Page) and [shadcn/ui](https://ui.shadcn.com/)
+- The glow animation stylings in the 'View artists' button came from [CSS Scan](https://getcssscan.com/css-buttons-examples)
 
 ## Contact
 
