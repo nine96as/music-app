@@ -5,29 +5,27 @@ import Song from '../Song';
 
 function SongList({ artist_id }) {
   const [songs, setSongs] = useState([]);
-  const [details, setDetails] = useState([]);
+  const [album, setAlbum] = useState();
 
   useEffect(() => {
-    getAlbumDetails();
-    getSongs();
+    getAlbum();
   }, []);
 
-  const getAlbumDetails = async () => {
+  useEffect(() => {
+    getSongs();
+  }, [album]);
+
+  const getAlbum = async () => {
     const resp = await axios.get(
       `https://theaudiodb.com/api/v1/json/2/album.php?i=${artist_id}`
     );
-    const album = resp.data.album.pop();
-    setDetails([
-      {
-        album_id: parseInt(album.idAlbum),
-        cover_art: album.strAlbumThumb
-      }
-    ]);
+    const albums = resp.data.album.filter((a) => a.strAlbumThumb);
+    setAlbum(albums.pop());
   };
 
-  const getSongs = async () => {
+  const getSongs = async (albumId) => {
     const resp = await axios.get(
-      `https://theaudiodb.com/api/v1/json/2/track.php?m=${details[0].album_id}`
+      `https://theaudiodb.com/api/v1/json/2/track.php?m=${album.idAlbum}`
     );
     const songs = resp.data.track;
     setSongs(songs);
@@ -39,7 +37,7 @@ function SongList({ artist_id }) {
       <div className='song-container table-container'>
         {songs.map((s, i) => (
           <Song
-            coverArt={details[0].cover_art}
+            coverArt={album.strAlbumThumb}
             name={s.strTrack}
             album={s.strAlbum}
             duration={s.intDuration}
