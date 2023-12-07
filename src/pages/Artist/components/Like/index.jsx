@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './style.css';
 
 function Like() {
   const [like, setLike] = useState(false);

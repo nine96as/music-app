@@ -1,0 +1,23 @@
+.album {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+  gap: 12px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 12px;
+  width: 161px;
+  transition: all 0.15s ease-in-out;
+}
+
+.album-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.album-cover-art {
+  height: 161px;
+  border-radius: 8px;
+}

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Genre from '../Genre';
+import './style.css';
 
 function ArtistInfoContent() {
   const [artist, setArtist] = useState([]);
