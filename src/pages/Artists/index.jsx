@@ -11,7 +11,9 @@ const Artists = () => {
   }, []);
 
   const getArtists = () => {
-    const artistsArr = [114390, 152752, 111718, 144041, 153610, 111822];
+    const artistsArr = [
+      114390, 152752, 111718, 144041, 153610, 111822, 151915, 147724, 146511
+    ];
     artistsArr.map(async (a) => {
       let resp = await axios.get(
         `https://theaudiodb.com/api/v1/json/2/artist.php?i=${a}`
