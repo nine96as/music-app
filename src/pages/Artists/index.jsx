@@ -1,11 +1,10 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const Artists = () => {
   const [artists, setArtists] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     getArtists();
@@ -26,15 +25,20 @@ const Artists = () => {
       <h1>Artists</h1>
       <div className='artists-container'>
         {artists.map((a, i) => (
-          <div className='artist-card' key={i}>
-            <img
-              className='artist-img'
-              src={a.strArtistThumb}
-              alt={a.strArtist}
-              onClick={() => navigate(`/artists/${a.idArtist}`)}
-            />
-            <div className='artist-name'>{a.strArtist}</div>
-          </div>
+          <Link
+            to={`/artists/${a.idArtist}`}
+            key={i}
+            aria-aria-label={`go to ${a.strArtist}'s page`}
+          >
+            <div className='artist-card'>
+              <img
+                className='artist-img'
+                src={a.strArtistThumb}
+                alt={a.strArtist}
+              />
+              <div className='artist-name'>{a.strArtist}</div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
