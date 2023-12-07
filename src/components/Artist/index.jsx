@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Genre from '../Genre';
 
-function Artist() {
+function Artist({ artist_id }) {
   const [artist, setArtist] = useState([]);
 
   useEffect(() => {
@@ -10,7 +11,7 @@ function Artist() {
 
   const getArtist = async () => {
     try {
-      const url = 'https://theaudiodb.com/api/v1/json/2/artist.php?i=144041';
+      const url = `https://theaudiodb.com/api/v1/json/2/artist.php?i=${artist_id}`;
       const resp = await fetch(url);
       const artistData = await resp.json();
 
@@ -33,3 +34,7 @@ function Artist() {
 }
 
 export default Artist;
+
+Artist.propTypes = {
+  artist_id: PropTypes.number
+};
