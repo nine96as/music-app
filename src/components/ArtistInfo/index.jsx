@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import Artist from '../Artist';
+import { default as ArtistInfoContent } from '../ArtistInfoContent';
 
 function ArtistInfo({ artist_id }) {
   return (
     <div className='info-section'>
-      <Artist artist_id={artist_id} />
+      <ArtistInfoContent artist_id={artist_id} />
     </div>
   );
 }
