@@ -70,6 +70,7 @@ Project is: _in progress_
 
 - The CSS styling in this project was inspired by [Masudur Rahman](https://dribbble.com/shots/5776583-Light-Music-Artist-Page) and [shadcn/ui](https://ui.shadcn.com/)
 - The glow animation stylings in the 'View artists' button came from [CSS Scan](https://getcssscan.com/css-buttons-examples)
+- The favicon used was sourced from [icons8](https://icons8.com/icon/set/music/sf-regular)
 
 ## Contact
 
