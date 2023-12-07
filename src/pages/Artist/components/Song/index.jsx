@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 import Like from '../Like';
+import './style.css';
 
 function Song({ coverArt, name, album, duration }) {
   return (

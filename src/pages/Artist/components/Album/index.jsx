@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './style.css';
 
 function Album({ name, img }) {
   return (

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Song from '../Song';
+import './style.css';
 
 function SongList() {
   const [songs, setSongs] = useState([]);
