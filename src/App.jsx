@@ -4,7 +4,7 @@ import { AlbumList, ArtistInfo, SongList } from './components';
 function App() {
   return (
     <>
-      <ArtistInfo />
+      <ArtistInfo artist_id={144041} />
       <SongList />
       <AlbumList />
     </>
