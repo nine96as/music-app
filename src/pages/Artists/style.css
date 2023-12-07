@@ -8,6 +8,11 @@
   flex-flow: row wrap;
 }
 
+.artists-container a {
+  text-decoration: none;
+  color: #000;
+}
+
 .artist-card {
   display: flex;
   gap: 10px;
