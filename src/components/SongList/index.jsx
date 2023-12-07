@@ -23,7 +23,7 @@ function SongList({ artist_id }) {
     setAlbum(albums.pop());
   };
 
-  const getSongs = async (albumId) => {
+  const getSongs = async () => {
     const resp = await axios.get(
       `https://theaudiodb.com/api/v1/json/2/track.php?m=${album.idAlbum}`
     );
