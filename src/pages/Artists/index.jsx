@@ -23,13 +23,14 @@ const Artists = () => {
   };
 
   return (
-    <div className='artists'>
-      <h1>Artists</h1>
+    <main className='artists' role='main'>
+      <h1 role='heading'>Artists</h1>
       <div className='artists-container'>
         {artists.map((a, i) => (
           <Link
             to={`/artists/${a.idArtist}`}
             key={i}
+            role='listitem'
             aria-aria-label={`go to ${a.strArtist}'s page`}
           >
             <div className='artist-card'>
@@ -43,7 +44,7 @@ const Artists = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
