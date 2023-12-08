@@ -18,11 +18,13 @@ The Music App is a front-end application built using React that allows for the v
 
 ## Technologies Used
 
-- React - version 18.2.0
-- Vite - version 5.0.5
-- ESLint - version 8.53.0
-- Node.js - version 18.17.0
+- [React](https://react.dev/) - version 18.2.0
+- [React Router](https://reactrouter.com/en/main) - version 6.20.1
+- [Vite](https://vitejs.dev/) - version 5.0.5
+- [ESLint](https://eslint.org/) - version 8.53.0
+- [Node.js](https://nodejs.org/en) - version 18.17.0
 - CSS - version 3
+- HTML - version 5
 
 ## Features
 
