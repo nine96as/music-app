@@ -6,11 +6,12 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <h1>
+      <h1 role='heading'>
         Browse through <s>trending</s> artists.
       </h1>
       <div className='home-btn-container'>
         <button
+          role='button'
           className='button-85'
           aria-label='view artists'
           onClick={() => navigate('/artists')}
