@@ -28,8 +28,6 @@ The Music App is a front-end application built using React that allows for the v
 
 ## Features
 
-List the ready features here:
-
 - Viewing list of selectable artists
   - Apple Music-esque view, with the image and name of the artist provided
 - Viewing specific artist profile pages
