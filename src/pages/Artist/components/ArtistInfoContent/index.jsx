@@ -25,14 +25,14 @@ function ArtistInfoContent() {
   };
 
   return (
-    <>
+    <div>
       <h1 className='artist-name'>{artist.strArtist}</h1>
       <p className='artist-intro'>{artist.strBiographyEN}</p>
 
       <div className='artist-genres'>
         <Genre value={artist.strGenre} />
       </div>
-    </>
+    </div>
   );
 }
 
