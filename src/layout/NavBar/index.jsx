@@ -7,10 +7,10 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav>
+      <nav role='navigation'>
         <h2>
-          {' '}
           <NavLink
+            role='link'
             to='/'
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
@@ -20,6 +20,7 @@ const NavBar = () => {
         <ul className='nav-links'>
           <li>
             <NavLink
+              role='link'
               to='/artists'
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
