@@ -30,16 +30,16 @@ The Music App is a front-end application built using React that allows for the v
 
 List the ready features here:
 
+- Viewing list of selectable artists
+  - Apple Music-esque view, with the image and name of the artist provided
 - Viewing specific artist profile pages
-  - Can view their top songs, and their respective albums, with a simple like system in place.
+  - An introduction is provided, along with their top songs, and their respective albums, with a simple like system in place.
 
 ## Screenshots
 
 ![Home page screenshot](./src/assets/home_page.jpeg)
 ![Artists page screenshot](./src/assets/artists_page.jpeg)
 ![Artist page screenshot](./src/assets/artist_page.jpeg)
-
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
 
