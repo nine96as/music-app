@@ -33,7 +33,9 @@ List the ready features here:
 
 ## Screenshots
 
-![Artist page screenshot](./src/assets/music-app_artistPage.png)
+![Home page screenshot](./src/assets/home_page.jpeg)
+![Artists page screenshot](./src/assets/artists_page.jpeg)
+![Artist page screenshot](./src/assets/artist_page.jpeg)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
