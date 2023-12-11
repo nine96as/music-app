@@ -10,7 +10,7 @@ describe('Artist component', () => {
     </MemoryRouter>
   );
 
-  it('displays one heading', () => {
+  it('displays one heading initially', () => {
     const headings = screen.queryAllByRole('heading', {
       level: 1
     });

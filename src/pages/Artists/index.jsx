@@ -26,10 +26,10 @@ const Artists = () => {
     <main className='artists' role='main'>
       <h1 role='heading'>Artists</h1>
       <div className='artists-container'>
-        {artists.map((a, i) => (
+        {artists.map((a) => (
           <Link
             to={`/artists/${a.idArtist}`}
-            key={i}
+            key={a.idArtist}
             role='listitem'
             aria-aria-label={`go to ${a.strArtist}'s page`}
           >
