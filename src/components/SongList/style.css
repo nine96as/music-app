@@ -1,0 +1,9 @@
+.song-list-section {
+  padding: 24px;
+}
+
+.song-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}

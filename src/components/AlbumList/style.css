@@ -1,0 +1,9 @@
+.album-list-section {
+  padding: 24px;
+}
+
+.album-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+}
