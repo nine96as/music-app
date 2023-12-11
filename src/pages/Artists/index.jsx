@@ -1,10 +1,11 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useArtist } from '../../contexts';
 import './style.css';
 
 const Artists = () => {
-  const [artists, setArtists] = useState([]);
+  const { artists, setArtists } = useArtist();
 
   useEffect(() => {
     getArtists();
@@ -15,10 +16,10 @@ const Artists = () => {
       114390, 152752, 111718, 144041, 153610, 111822, 151915, 147724, 146511
     ];
     artistsArr.map(async (a) => {
-      let resp = await axios.get(
+      let { data } = await axios.get(
         `https://theaudiodb.com/api/v1/json/2/artist.php?i=${a}`
       );
-      setArtists((prev) => [...prev, resp.data.artists[0]]);
+      setArtists((prev) => [...prev, data.artists[0]]);
     });
   };
 
