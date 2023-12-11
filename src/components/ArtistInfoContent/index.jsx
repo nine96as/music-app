@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import GenreItem from '../GenreItem';
@@ -13,11 +14,10 @@ function ArtistInfoContent() {
 
   const getArtist = async () => {
     try {
-      const url = `https://theaudiodb.com/api/v1/json/2/artist.php?i=${id}`;
-      const resp = await fetch(url);
-      const artistData = await resp.json();
-
-      setArtist(artistData.artists[0]);
+      const { data } = await axios.get(
+        `https://theaudiodb.com/api/v1/json/2/artist.php?i=${id}`
+      );
+      setArtist(data.artists[0]);
     } catch (e) {
       console.log(e);
     }

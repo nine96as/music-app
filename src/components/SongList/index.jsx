@@ -18,18 +18,18 @@ function SongList() {
   }, [album]);
 
   const getAlbum = async () => {
-    const resp = await axios.get(
+    const { data } = await axios.get(
       `https://theaudiodb.com/api/v1/json/2/album.php?i=${id}`
     );
-    const albums = resp.data.album.filter((a) => a.strAlbumThumb);
+    const albums = data.album.filter((a) => a.strAlbumThumb);
     setAlbum(albums.pop());
   };
 
   const getSongs = async () => {
-    const resp = await axios.get(
+    const { data } = await axios.get(
       `https://theaudiodb.com/api/v1/json/2/track.php?m=${album.idAlbum}`
     );
-    const songs = resp.data.track;
+    const songs = data.track;
     setSongs(songs);
   };
 
