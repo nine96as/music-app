@@ -1,4 +1,4 @@
-import { AlbumList, ArtistInfo, SongList } from './components';
+import { AlbumList, ArtistInfo, SongList } from '../../components';
 
 const Artist = () => {
   return (
