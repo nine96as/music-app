@@ -1,11 +1,12 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useArtist } from '../../contexts';
 import GenreItem from '../GenreItem';
 import './style.css';
 
 function ArtistInfoContent() {
-  const [artist, setArtist] = useState([]);
+  const { artist, setArtist } = useArtist();
   const { id } = useParams();
 
   useEffect(() => {
