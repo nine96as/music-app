@@ -2,8 +2,6 @@ import { createContext, useContext, useState } from 'react';
 
 const ArtistContext = createContext(null);
 
-import React from 'react';
-
 export const ArtistProvider = ({ children }) => {
   const [artists, setArtists] = useState([]);
   const [artist, setArtist] = useState([]);
